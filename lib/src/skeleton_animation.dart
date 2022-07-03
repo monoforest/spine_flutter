@@ -24,7 +24,7 @@ class SkeletonAnimation extends core.Skeleton {
   }) async {
     final String atlasDataFile = '$name.atlas';
     final String skeletonDataFile = '$name.json';
-    final String path = '$pathBase$name/';
+    final String path = '$pathBase/';
 
     final Map<String, dynamic> assets = <String, dynamic>{};
     final List<Future<MapEntry<String, dynamic>>> futures =
