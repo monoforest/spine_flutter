@@ -103,7 +103,9 @@ class SkeletonRenderObject extends RenderBox {
       SchedulerBinding.instance.scheduleFrameCallback(beginFrame);
     }
 
-    markNeedsPaint();
+    try {
+      markNeedsPaint();
+    } catch (e) {}
   }
 
   @override
